@@ -43,7 +43,7 @@ export function Profile() {
         </View>
 
         <Text style={styles.message}>
-          Hoje é dia de vitória
+          Hoje é dia de GamePlay
         </Text>
       </View>
 
