@@ -17,8 +17,8 @@ type Props = RectButtonProps & {
 export function Category({
   title,
   icon: Icon,
-  hasCheckBox = false,
   checked = false,
+  hasCheckBox = false,
   ...rest
 }: Props){
   const { secondary40, secondary50, secondary70, secondary85 } = theme.colors;
@@ -26,12 +26,12 @@ export function Category({
   return(
     <RectButton {...rest}>
       <LinearGradient
-      style={styles.container}
-      colors={[secondary50, secondary70]}
+        style={styles.container}
+        colors={[secondary50, secondary70]}
       >
         <LinearGradient 
-        style={[styles.content, { opacity: checked ? 1 : 0.4 }]}
-        colors={[ checked ? secondary85 : secondary50, secondary40]}
+          style={[styles.content, { opacity: checked ? 1 : 0.5 }]}
+          colors={[ checked ? secondary85 : secondary50, secondary40 ]}
         >
           {
             hasCheckBox &&
